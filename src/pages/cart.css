@@ -1,0 +1,82 @@
+/* src/Cart.css */
+
+.cart-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.cart-title {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+
+.cart-item {
+  display: flex;
+  background: white;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.cart-item img {
+  width: 150px;
+  object-fit: cover;
+}
+
+.cart-info {
+  padding: 1rem;
+  flex: 1;
+}
+
+.cart-info h3 {
+  margin: 0 0 0.5rem;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0.5rem 0;
+}
+
+.quantity-controls button {
+  padding: 0.3rem 0.7rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #f44336;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-actions {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.continue-btn,
+.checkout-btn {
+  background: #4CAF50;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.continue-btn:hover,
+.checkout-btn:hover {
+  background: #45a049;
+}
