@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
 import NotFound from './pages/NotFound'
 import Shop from './pages/shop'
@@ -9,7 +9,7 @@ function App() {
 
 
 
-  return <BrowserRouter>
+  return <HashRouter>
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/cart" element={<Cart />} />
@@ -17,7 +17,7 @@ function App() {
       <Route path="/shop" element={<Shop />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 
 }
 
